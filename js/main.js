@@ -1,7 +1,7 @@
 // Primer mensaje de página
 alert("Bienvenido a Rock Merch N'Roll" )
 
-//simulador de compra de productos
+// Simulador de compra de productos
 
 // Variables inicializadas 
 let nombreIngresado = "" .toUpperCase;
@@ -15,7 +15,7 @@ let precioTotal = 0;
 let cantidadTotal = 0;
 let seguirComprando = false;
 
-//funciones
+// Funciones
 const multiplicacion = (a,b) => a * b ;
 const suma = (a,b) => a + b ;
 
@@ -40,30 +40,33 @@ do {
         askAgain = false;
     }else{
         alert("Los correos electronicos deben ser iguales");
+        userEmail = prompt("Ingrese nuevamente su correo electrónico");
+        confirmUserEmail = prompt("confirme su correo electrónico");
     }
 
 } while (askAgain);
 
 
-//Operación de compra
+// Operación de compra
 do {
     producto = prompt("¿Desea comprar remeras, buzos o accesorios?");
-    cantidad = parseInt (prompt("Ingrese cantidad de productos que desea comprar"));
 
     switch(producto){
         case "remeras":
             precio = 2500;
+            cantidad = parseInt (prompt("Ingrese cantidad de productos que desea comprar"));
             break
         case "buzos":
             precio = 4000;
+            cantidad = parseInt (prompt("Ingrese cantidad de productos que desea comprar"));
             break
         case "accesorios":
             precio = 1200;
             break
         default:
             alert("El producto no esta en nuestro catálogo");
-            precio = 0;
-            cantidad = 0;
+            precio = 0
+            cantidad = 0
             break;
     }   
 
