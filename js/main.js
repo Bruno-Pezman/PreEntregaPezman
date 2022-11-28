@@ -15,7 +15,7 @@ let precioTotal = 0;
 let cantidadTotal = 0;
 let seguirComprando = false;
 
-// Funciones
+// Funciones 
 const multiplicacion = (a,b) => a * b ;
 const suma = (a,b) => a + b ;
 
@@ -50,7 +50,7 @@ do {
 // Operación de compra
 do {
     producto = prompt("¿Desea comprar remeras, buzos o accesorios?");
-
+    
     switch(producto){
         case "remeras":
             precio = 2500;
