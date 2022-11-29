@@ -180,8 +180,9 @@ const calcularTotalAPagar = (precioTotal, cuotas, intereses) => {
 
     precioTotal = (precioTotal + intereses);
     let valorCuota = precioTotal / cuotas;
+
     alert("El monto final es $"+precioTotal+". Lo pagará en "+cuotas+" cuota/s de $"+valorCuota.toFixed(2))  
-    alert("¡GRACIAS "+nombreIngresado+" POR CONFIAR EN NOSOTROS!");
+    alert("¡GRACIAS POR CONFIAR EN NOSOTROS!");
 };
 
 const precioTotal = operacionCompra();
