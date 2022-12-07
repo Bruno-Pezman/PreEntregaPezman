@@ -9,9 +9,17 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
+/* Estilos Header */
+
+.header-index{
+    display: flex;
+    align-items: center;
+}
+
+
 /* Estilos p */
 p {
-    line-height: 1.6;
+    line-height: 1.8;
 }
 /* Estilos contenedor de productos */
 #producto-contenedor {
@@ -25,10 +33,17 @@ p {
 }
 
 /* Estilos imágenes */
-img {
+.card-img {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 10px !important;
+}
+
+#logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Estilos Card */

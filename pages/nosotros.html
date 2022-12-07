@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Link a favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
 
     <!-- Link de estilos Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <!-- Link a CSS -->
     
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <!-- Titulo de página -->
     <title>Rock Merch N'Roll</title>
@@ -21,8 +21,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/favicon-32x32.png" alt="Rock Merch n'Roll">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/favicon-32x32.png" alt="Rock Merch n'Roll">
             </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link">Nosotros</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contacto</a>
@@ -63,8 +63,8 @@
     <div class="container">
         <header class="header-index">
             <div>
-                <a href="index.html">
-                    <img src="img/android-chrome-192x192.png" alt="Rock Merch N'Roll">
+                <a href="../index.html">
+                    <img src="../img/android-chrome-192x192.png" alt="Rock Merch N'Roll">
                 </a>
             </div>
             <div class="p-4 p-md-5 mb-4 text-bg-white">
@@ -74,76 +74,19 @@
                 
             </div>
         </header>
-        <section class="d-flex justify-content-center">
-            <h2>Destacado</h2>
-        </section>
-        <main id="producto-contenedor">
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/busoacdc.png" class="card-img" alt="Buso ACDC">
-                    <p class="card-title">Buso ACDC</p>  
-                </div>
-                <div class="card-content">
-                    <p>AC/DC - negro - liso</p>
-                    <p>M</p>
-                    <p>$3400</p>
-                </div>
+        <main class="main-nosotros py-4">
+
+            <h2 class="display-4 fst-italic">Nosotros</h2>
+            <p class="py-4">Rock Merch N'Roll es una tienda virtual en la cual vas a poder encontrar los mejores productos de tus bandas preferidas al mejor precio, entre ellos, remeras, busos, gorras, tazas, etc. Contamos con merchandising de calidad para poder satisfacer sus necesidades. Lo invitamos a navegar en nuestro sitio web para conocer nuestros productos y poder llevarse una buena expericencia.</p>
+            <div id="logos">
+                <img src="../img/acdc-logo.jpg" class="col-12  col-md-6 col-lg-4 img-fluid" alt="ACDC LOGO">
+                <img src="../img/aerosmith-logo.png" class= "col-12  col-md-6 col-lg-4 img-fluid" alt="Aerosmith LOGO">
+                <img src="../img/rolling-stones-logo.jpg"  class= "col-12  col-md-6 col-lg-4 img-fluid" alt="Rolling Stones LOGO">
+                <img src="../img/thewho-logo.png" class= "col-12  col-md-6 col-lg-4 img-fluid" alt="The Who LOGO">
+                <img src="../img/thebeatles-logo.png" class= "col-12  col-md-6 col-lg-4 img-fluid" alt="The Beatles LOGO">
+                <img src="../img/Logo-Guns-N-Roses.png"  class= "col-12  col-md-6 col-lg-4 img-fluid" alt="Guns N'Roses LOGO">
             </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/remerathebeatles.png" class="card-img" alt="Remera The Beatles">
-                    <p class="card-title">Remera THE BEATLES</p>  
-                </div>
-                <div class="card-content">
-                    <p>The Beatles - negro - liso</p>
-                    <p>M</p>
-                    <p>$2400</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/remerapinkfloyd.png" class="card-img" alt="Remera Pink Floyd">
-                    <p class="card-title">Remera Pink Floyd</p>  
-                </div>
-                <div class="card-content">
-                    <p>Pink Floyd - negro - liso</p>
-                    <p>L</p>
-                    <p>$2800</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/remerabonjovi.png" class="card-img" alt="Remera Bon Jovi">
-                    <p class="card-title">Remera Bon Jovi</p>  
-                </div>
-                <div class="card-content">
-                    <p>Bon jovi -  Azul marino - liso</p>
-                    <p>M</p>
-                    <p>$2400</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/remeradoors.png" class="card-img" alt="Remera The Doors">
-                    <p class="card-title">Remera The doors</p>  
-                </div>
-                <div class="card-content">
-                    <p>The doors - negra - estampado</p>
-                    <p>S</p>
-                    <p>$2800</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/remeraledzepelin.png" class="card-img" alt="Remera Led Zeppelin">
-                    <p class="card-title">Remera Led Zeppelin</p>  
-                </div>
-                <div class="card-content">
-                    <p>Led Zeppelin - negra - estampado</p>
-                    <p>L</p>
-                    <p>$2800</p>
-                </div>
-            </div>
+    
         </main>
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center"> 
@@ -168,7 +111,7 @@
     <script src="https://kit.fontawesome.com/b6c4828d54.js" crossorigin="anonymous"></script>
 
     <!-- Link a JS -->
-    <script src="js/stock.js"></script>
+    
     <!-- <script src="js/main.js"></script>  -->
 </body>
 </html>
