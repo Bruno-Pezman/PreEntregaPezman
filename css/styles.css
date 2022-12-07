@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Estilos Body */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* Estilos p */
+p {
+    line-height: 1.6;
+}
+/* Estilos contenedor de productos */
+#producto-contenedor {
+    display: grid;
+    gap: 1rem;
+    max-width: 60rem;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Estilos imágenes */
+img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px !important;
+}
+
+/* Estilos Card */
+.cards{
+    display: flex;
+
+}
+.card {
+    max-width: 30%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.card .card-image .card-title {
+    color: rgb(0, 0, 0);
+    position: unset
+  }

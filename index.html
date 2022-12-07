@@ -11,6 +11,10 @@
     <!-- Link de estilos Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+    <!-- Link a CSS -->
+    
+    <link rel="stylesheet" href="css/styles.css">
+
     <!-- Titulo de página -->
     <title>Rock Merch N'Roll</title>
 </head>
@@ -65,14 +69,73 @@
                 </div>
             </div>
         </header>
-        <main>
-            <div class="d-flex flex-wrap justify-content-center">
-                <img src="img/busoacdc.png" class="col-12  col-md-6 col-lg-4 img-fluid p-4" alt="Buso ACDC">
-                <img src="img/remerathebeatles.png" class="col-12  col-md-6 col-lg-4 img-fluid p-4" alt="Remera THE BEATLES">
-                <img src="img/remeradoors.png" class="col-12  col-md-6 col-lg-4 img-fluid p-4" alt="Remera THE DOORS">
-                <img src="img/remeraledzepelin.png" class="col-12  col-md-6 col-lg-4 img-fluid p-4" alt="Remera LED ZEPPELIN">
-                <img src="img/remerapinkfloyd.png" class="col-12  col-md-6 col-lg-4 img-fluid p-4" alt="Remera PINK FLOYD">
-                <img src="img/remerabonjovi.png" class="col-12  col-md-6 col-lg-4 img-fluid p-4" alt="Remera BON JOVI">
+        <main id="producto-contenedor">
+            
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/busoacdc.png"  alt="Buso ACDC">
+                    <p class="card-title">Buso ACDC</p>  
+                </div>
+                <div class="card-content">
+                    <p>AC/DC - negro - liso</p>
+                    <p>M</p>
+                    <p>$3400</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/remerathebeatles.png"  alt="Remera The Beatles">
+                    <p class="card-title">Remera THE BEATLES</p>  
+                </div>
+                <div class="card-content">
+                    <p>The Beatles - negro - liso</p>
+                    <p>M</p>
+                    <p>$2400</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/remerapinkfloyd.png"  alt="Remera Pink Floyd">
+                    <p class="card-title">Remera Pink Floyd</p>  
+                </div>
+                <div class="card-content">
+                    <p>Pink Floyd - negro - liso</p>
+                    <p>L</p>
+                    <p>$2800</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/remerabonjovi.png"  alt="Remera Bon Jovi">
+                    <p class="card-title">Remera Bon Jovi</p>  
+                </div>
+                <div class="card-content">
+                    <p>Bon jovi -  Azul marino - liso</p>
+                    <p>M</p>
+                    <p>$2400</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/remeradoors.png"  alt="Remera The Doors">
+                    <p class="card-title">Remera The doors</p>  
+                </div>
+                <div class="card-content">
+                    <p>The doors - negra - estampado</p>
+                    <p>S</p>
+                    <p>$2800</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/remeraledzepelin.png"  alt="Remera Led Zeppelin">
+                    <p class="card-title">Remera Led Zeppelin</p>  
+                </div>
+                <div class="card-content">
+                    <p>Led Zeppelin - negra - estampado</p>
+                    <p>L</p>
+                    <p>$2800</p>
+                </div>
             </div>
         </main>
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -99,6 +162,6 @@
 
     <!-- Link a JS -->
     <script src="js/stock.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script> 
 </body>
 </html>

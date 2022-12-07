@@ -17,7 +17,8 @@ const IdentificaciónUsuario = () => {
 
         if (nombreIngresado == ""){
             alert("Vuelva a ingresar su nombre porfavor")
-        }else {         askAgain = false;
+        }else {         
+            askAgain = false;
            }
     } while (askAgain);
 
