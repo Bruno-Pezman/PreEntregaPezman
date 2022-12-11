@@ -21,7 +21,9 @@ body {
 p {
     line-height: 1.8;
 }
+
 /* Estilos contenedor de productos */
+
 #producto-contenedor {
     display: grid;
     gap: 1rem;
@@ -33,6 +35,7 @@ p {
 }
 
 /* Estilos imágenes */
+
 .card-img {
     width: 100%;
     margin-bottom: 10px;
@@ -47,6 +50,7 @@ p {
 }
 
 /* Estilos Card */
+
 .cards{
     display: flex;
 
