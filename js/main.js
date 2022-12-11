@@ -165,18 +165,6 @@ alert("Bienvenido a Rock Merch N'Roll" )
 // array de productos
 const carrito = [];
 
-// Inicio de la compra
-
-const comprar = () => {
-    const baratoCaro = confirm("¿Desea tener los productos ordenados, desde el más barato al más caro?")
-
-    if (baratoCaro){
-        ordenarMenorMayor()
-    } else{
-        ordenarMayorMenor()
-    }
-};
-
 // Ordenar productos de menor a mayor precio
 const ordenarMenorMayor = () => {
     productos.sort((a,b) => a.precio - b.precio)
@@ -340,46 +328,6 @@ const calcularEnvio = (precioTotal) => {
     return precioTotal;
 }
 
-// Calcular la cantidad de cuotas
-
-const calcularCantidadDeCuotas = () =>{
-    let cuotas = 0;
-    let tieneCuotas = false;
-
-    tieneCuotas = confirm("¿Queres pagar en cuotas?");
-
-    if (tieneCuotas) {
-        cuotas = parseInt(prompt("¿En cuantas cuotas queres pagar?"))
-        if (cuotas === 0){
-            cuotas = 1;
-        } else if(Number.isNaN(cuotas)){
-            calcularCantidadDeCuotas();
-        }
-    } else {
-        cuotas = 1;
-    }
-
-    return cuotas; 
-};
-
-// Función para pagar con Intereses
-
- const calcularIntereses = () => {
-
-    let tasa = 12.3;
-    let sinIntereses = 0;
-    let tasaTotal = 0;
-    let interesesTotales = 0;
-
-    if (cuotas === 1) {
-        return sinIntereses;
-    } else {
-        tasaTotal = tasa + cuotas*0.2
-        interesesTotales = tasaTotal * cuotas;
-        return interesesTotales;
-    }
-};
-
 // Finalizar la compra
 
 const finalizarCompra = (listaProductos) => {
@@ -393,11 +341,10 @@ const finalizarCompra = (listaProductos) => {
         +"\n\n"+listaProductos.join("\n")
         +"\n\nTotal de productos: "+cantidadTotal
         +"\n\nEl total de la compra es: $"+totalConEnvio
-        +"\n\nLo pagará en "+cuotas+" cuota/s de $"+valorCuota.toFixed(2)
         +"\n\nGracias por confiar en nosotros!"
     )
 
     return totalConEnvio
 }
 
-comprar();
+ordenarMayorMenor()
