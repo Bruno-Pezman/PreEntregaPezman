@@ -165,6 +165,17 @@ alert("Bienvenido a Rock Merch N'Roll" )
 // array de productos
 const carrito = [];
 
+// Inicializo la compra preguntando el orden de preferencia del usuario para comprar
+const comprar = () => {
+    const productosBaratos = confirm ("¿Querés ordenar la lista desde el producto mas barato al mas caro?")
+
+    if (productosBaratos){
+        ordenarMenorMayor()
+    } else {
+        ordenarMayorMenor()
+    }
+}
+
 // Ordenar productos de menor a mayor precio
 const ordenarMenorMayor = () => {
     productos.sort((a,b) => a.precio - b.precio)
@@ -347,4 +358,4 @@ const finalizarCompra = (listaProductos) => {
     return totalConEnvio
 }
 
-ordenarMayorMenor()
+comprar();
