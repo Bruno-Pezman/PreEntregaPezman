@@ -182,24 +182,6 @@ const calcularCantidadDeCuotas = () =>{
     return cuotas; 
 };
 
-// Función para pagar con Intereses
-
-const calcularIntereses = () => {
-
-    let tasa = 12.3;
-    let sinIntereses = 0;
-    let tasaTotal = 0;
-    let interesesTotales = 0;
-
-    if (cuotas === 1) {
-        return sinIntereses;
-    }else{
-        tasaTotal = tasa + cuotas*0.2
-        interesesTotales = tasaTotal * cuotas;
-        return interesesTotales;
-    }
-};
-
 // Función para envío a domicilio
 
 const calcularEnvio = (precioTotal) => {
@@ -228,7 +210,6 @@ const finalizarCompra = (listaProductos) => {
     const totalConDescuento = aplicarDescuento(precioTotal);
     const totalConEnvio = calcularEnvio(totalConDescuento);
     cuotas = calcularCantidadDeCuotas();
-    intereses = calcularIntereses(cuotas);
     const valorCuota = totalConEnvio / cuotas
 
     alert("Detalle de su compra:"
