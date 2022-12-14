@@ -11,82 +11,48 @@
     <!-- Link de estilos Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+    <!-- Link a google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=EB+Garamond:wght@800&family=Montserrat:wght@400;700&family=Tiro+Bangla&display=swap" rel="stylesheet">
+
     <!-- Link a CSS -->
-    
     <link rel="stylesheet" href="../css/styles.css">
 
     <!-- Titulo de página -->
     <title>Rock Merch N'Roll</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light py-3 fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/favicon-32x32.png" alt="Rock Merch n'Roll">
-            </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="../img/favicon.ico" alt="Rock Merch N'Roll">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link">Nosotros</a>
+                        <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#">Remeras</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Camperas</a>
-                            </li>
-                            
-                            <li>
-                                <a class="dropdown-item" href="#">Accesorios</a>
-                            </li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Ayuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
             </div>
         </div>
     </nav>
     <div class="container">
-        <header class="header-index">
-            <div>
-                <a href="../index.html">
-                    <img src="../img/android-chrome-192x192.png" alt="Rock Merch N'Roll">
-                </a>
-            </div>
-            <div class="p-4 p-md-5 mb-4 text-bg-white">
-               
-                <h1 class="display-4 fst-italic">Rock Merch N' Roll</h1>
-                <p class="lead my-3">Contenido para fanáticos</p>
-                
-            </div>
-        </header>
         <main class="main-nosotros py-4">
-
             <h2 class="display-4 fst-italic">Nosotros</h2>
             <p class="py-4">Rock Merch N'Roll es una tienda virtual en la cual vas a poder encontrar los mejores productos de tus bandas preferidas al mejor precio, entre ellos, remeras, busos, gorras, tazas, etc. Contamos con merchandising de calidad para poder satisfacer sus necesidades. Lo invitamos a navegar en nuestro sitio web para conocer nuestros productos y poder llevarse una buena expericencia.</p>
-            <div id="logos">
-                <img src="../img/acdc-logo.jpg" class="col-12  col-md-6 col-lg-4 img-fluid" alt="ACDC LOGO">
-                <img src="../img/aerosmith-logo.png" class= "col-12  col-md-6 col-lg-4 img-fluid" alt="Aerosmith LOGO">
-                <img src="../img/rolling-stones-logo.jpg"  class= "col-12  col-md-6 col-lg-4 img-fluid" alt="Rolling Stones LOGO">
-                <img src="../img/thewho-logo.png" class= "col-12  col-md-6 col-lg-4 img-fluid" alt="The Who LOGO">
-                <img src="../img/thebeatles-logo.png" class= "col-12  col-md-6 col-lg-4 img-fluid" alt="The Beatles LOGO">
-                <img src="../img/Logo-Guns-N-Roses.png"  class= "col-12  col-md-6 col-lg-4 img-fluid" alt="Guns N'Roses LOGO">
-            </div>
-    
         </main>
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center"> 
