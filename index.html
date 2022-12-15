@@ -8,28 +8,33 @@
     <!-- Link a favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 
-    <!-- Link de estilos Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Link a box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <!-- Link a google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=EB+Garamond:wght@800&family=Montserrat:wght@400;700&family=Tiro+Bangla&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Oswald&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Link de estilos Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <!-- Link a CSS -->
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- Titulo de página -->
-    <title>Rock Merch N'Roll</title>
+    <title>Rock Merch & Roll</title>
 </head>
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
         <div class="container">
             <a href="index.html">
-                <img src="img/favicon.ico" alt="Rock Merch N'Roll">
+                <img src="img/favicon.ico" alt="Rock Merch & Roll">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span><i id="bar" class="fa-regular fa-bars"></i></span>
+                <span><i id="bar" class='bx bx-menu'></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
@@ -46,8 +51,8 @@
                         <a class="nav-link" href="">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class='bx bx-search-alt-2'></i>
+                        <i class='bx bxs-shopping-bag' ></i>
                     </li>
                 </ul>    
             </div>
@@ -55,8 +60,8 @@
     </nav>
     <section id="home">
         <div class="container">
-            <h1 class="display-4 fst-italic">Rock Merch N' Roll</h1>
-            <h5>Contenido para fanáticos</h5>
+            <h1 id="title" class="display-4">Rock Merch & Roll</h1>
+            <h5 id="subtitle" class="lead">Contenido para fanáticos</h5>
             <button>Compra Ahora</button>
         </div>
     </section>
@@ -70,103 +75,125 @@
             <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/thewho-logo.png" alt="">       
         </div>
     </section>
-    <div class="container-fluid">
-        <header class="header-index"></header>
-        <section class="d-flex justify-content-center">
+
+    <section id="destacados" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
             <h2>Destacado</h2>
-        </section>
-        <main id="producto-contenedor">
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/busoacdc.png" class="card-img" alt="Buso ACDC">
-                    <p class="card-title">Buso ACDC</p>  
+            <hr class="mx-auto">
+            <h5>Aca vas a poder observar los produtos con los mejores precios de la temporada.</h5>
+        </div>
+        <div>
+            <div class="row mx-auto container-fluid">
+                <div class="product text-center col-lg-3 col-md-4 col-12">            
+                    <img class="img-fluid mb-3" src="img/busoacdc.png" alt="Buso ACDC"> 
+                    <div class="star">
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                    </div>
+                    <h5 class="product-name">Buso ACDC</h5>
+                    <h4 class="product price">$5000</h4>
+                    <button class="buy-btn">Comprar</button>
                 </div>
-                <div class="card-content">
-                    <p>Negro - liso</p>
-                    <p>M</p>
-                    <p>$3400</p>
+                <div class="product text-center col-lg-3 col-md-4 col-12">            
+                    <img class="img-fluid mb-3" src="img/remerapinkfloyd.png" alt="Remera Pink Floyd"> 
+                    <div class="star">
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                    </div>
+                    <h5 class="product-name">Remera Pink Floyd</h5>
+                    <h4 class="product price">$4500</h4>
+                    <button class="buy-btn">Comprar</button>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/remerathebeatles.png" class="card-img" alt="Remera The Beatles">
-                    <p class="card-title">Remera THE BEATLES</p>  
+                <div class="product text-center col-lg-3 col-md-4 col-12">            
+                    <img class="img-fluid mb-3" src="img/remerabonjovi.png" alt="Remera Bon Jovi"> 
+                    <div class="star">
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                    </div>
+                    <h5 class="product-name">Gorro Nirvana</h5>
+                    <h4 class="product price">$1200</h4>
+                    <button class="buy-btn">Comprar</button>
                 </div>
-                <div class="card-content">
-                    <p>Negro - liso</p>
-                    <p>M</p>
-                    <p>$2400</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/remerapinkfloyd.png" class="card-img" alt="Remera Pink Floyd">
-                    <p class="card-title">Remera Pink Floyd</p>  
-                </div>
-                <div class="card-content">
-                    <p>Negro - liso</p>
-                    <p>L</p>
-                    <p>$2800</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/remerabonjovi.png" class="card-img" alt="Remera Bon Jovi">
-                    <p class="card-title">Remera Bon Jovi</p>  
-                </div>
-                <div class="card-content">
-                    <p>Azul marino - liso</p>
-                    <p>M</p>
-                    <p>$2400</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/remeradoors.png" class="card-img" alt="Remera The Doors">
-                    <p class="card-title">Remera The doors</p>  
-                </div>
-                <div class="card-content">
-                    <p>Negra - estampado</p>
-                    <p>S</p>
-                    <p>$2800</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="img/remeraledzepelin.png" class="card-img" alt="Remera Led Zeppelin">
-                    <p class="card-title">Remera Led Zeppelin</p>  
-                </div>
-                <div class="card-content">
-                    <p>Negra - estampado</p>
-                    <p>L</p>
-                    <p>$2800</p>
+                <div class="product text-center col-lg-3 col-md-4 col-12">            
+                    <img class="img-fluid mb-3" src="img/remeradoors.png" alt="Remera The Doors"> 
+                    <div class="star">
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                        <i class='bx bxs-star warning' ></i>
+                    </div>
+                    <h5 class="product-name">Remera The Doors</h5>
+                    <h4 class="product price">$4500</h4>
+                    <button class="buy-btn">Comprar</button>
                 </div>
             </div>
-        </main>
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center"> 
-                <span class="mb-3 mb-md-0 text-muted">© 2022 Rock Merch N'Roll, Inc</span>
+    </section>
+    
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="img/android-chrome-192x192.png" alt="Rock Merch & Roll">
             </div>
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3">
-                    <i class="text-muted fa-brands fa-instagram"></i>
-                </li>
-                <li class="ms-3">
-                    <i class="text-muted fa-brands fa-twitter"></i>
-                </li>
-                <li class="ms-3">
-                    <i class="text-muted fa-brands fa-facebook"></i>
-                </li>
-            </ul>
-        </footer>
-    </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Destacado</h5>
+                <ul class="text-uppercase list-unstyled">
+                    
+                    <li><a href="#">Remeras</a></li>
+                    <li><a href="#">Buzos</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Nuevo</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Contactanos</h5>
+                <div>
+                    <h6 class="text-uppercase">Dirección</h6>
+                    <p>Av. Corrientes 3500, Buenos Aires, Argentina</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Teléfono</h6>
+                    <p> (011) 15-4436-0647</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>rockmerchandroll@gmai.com</p>
+                </div>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">  
+                <i class='bx bxl-instagram  bx-lg' ></i>
+                <i class='bx bxl-twitter  bx-lg' ></i>
+                <i class='bx bxl-facebook-square  bx-lg' ></i>     
+            </div>
+            <div class="copyright mt-5">
+                <p>Rock Merch & Roll © 2022. Todos los derechos reservados.</p>
+            </div>
+            
+        </div>
+    </footer>
+         
+    
+    
 
 
-    <!-- Logos Redes -->
-    <script src="https://kit.fontawesome.com/b6c4828d54.js" crossorigin="anonymous"></script>
+    
 
     <!-- Link a JS -->
     <script src="js/stock.js"></script>
     <!-- <script src="js/main.js"></script> -->
+    
+    <!-- Link Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>

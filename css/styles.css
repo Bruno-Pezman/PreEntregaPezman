@@ -16,6 +16,11 @@ h1 {
     font-size: 2.5rem;
     font-weight: 700;
     color: rgb(15, 15, 15);
+    text-transform: uppercase;
+}
+
+#title {
+    font-family: 'EB Garamond', serif;
 }
 
 h2 {
@@ -30,19 +35,20 @@ h3 {
 }
 
 h4 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
 h5 {
-    font-size: 1rem;
-    font-weight: 400;
-    color: rgb(15, 15, 15);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
 }
 
-h6 {
-    color: #d8d8d8;
+#subtitle {
+    font-family: 'Oswald', sans-serif;
 }
+
 
 /* Estilos p */
 p {
@@ -61,15 +67,14 @@ p {
     font-size: 16px;
     top: 0;
     left: 0;
-    
 }
 
 .navbar-light .navbar-nav .nav-link {
     padding: 0 20px;
-    color: rgb(15, 15, 15); 
+    color: black;
     transition: 0.3s ease;
 }
-.navbar-light .navbar-nav .nav-link:hover, .navbar i, .navbar-light .navbar-nav .nav-link:active {
+.navbar-light  .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:active, .navbar i:hover, .navbar i:active {
     color: rgb(245, 146, 109);
 }
 
@@ -91,7 +96,7 @@ p {
 }
 
 #bar:hover, #bar:active {
-    color: rgb(245, 146, 109);
+    color: rgb(95, 95, 95)
 }
 
 
@@ -108,7 +113,7 @@ p {
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background-position: top center;
+    background-position: top 60px center;
 
     display: flex;
     flex-direction: column;
@@ -117,54 +122,41 @@ p {
 
 }
 
-/* Estilos Header */
-.header-index {
-    padding: 2rem;
+/* Estilos productos */
+
+.product {
+    cursor: pointer;
+    margin-bottom: 2rem;
+
 }
 
-/* Estilos contenedor de productos */
+.product img {
+    transition: 0.3s all;
+}
 
-#producto-contenedor {
-    display: grid;
-    gap: 1rem;
-    max-width: 60rem;
-    margin: 60px auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.product:hover img {
+    opacity: 0.7;
+}
+
+.product .buy-btn{
+    background-color: rgb(245, 146, 109);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.product:hover .buy-btn{
+    transform: translateY(0);
+    opacity: 1;
+    
 }
 
 /* Estilos imágenes */
-
-.card-img {
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
 #logos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-}
-
-/* Estilos Card */
-
-.cards{
-    display: flex;
-
-}
-.card {
-    max-width: 30%;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-}
-
-.card .card-image .card-title {
-    color: rgb(0, 0, 0);
-    position: unset
 }
 
 /* Estilos button */
@@ -174,7 +166,7 @@ button {
     font-weight: 700;
     outline: none;
     border: none;
-    background-color: rgb(15, 15, 15); 
+    background-color: black;
     color: aliceblue;
     padding: 12px 28px;
     cursor: pointer;
@@ -186,13 +178,85 @@ button:hover {
     background-color: rgb(245, 146, 109);
 }
 
+/* Estilos hr */
+
+hr {
+    width: 30px;
+    height: 2px;
+    background-color: rgb(245, 146, 109);
+}
+
+/* Estilos star */
+
+.star {
+    padding: 10px 0;
+}
+
+.star i {
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+
+/* Estilos footer */
+
+footer {
+    background-color: #d8d8d8;
+}
+
+footer h5{
+    font-weight:  700;
+    font-size: 1.2rem;
+}
+
+footer li a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+
+}
+
+footer div ul li a:hover {
+    background-color: rgb(245, 146, 109);
+}
+
+a:hover{
+    color: black;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+footer .copyright a {
+    color: black;
+    width: 38px;
+    height: 38px;
+    background-color: #d8d8d8;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5x;
+}
+
+footer i{
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer i:hover, footer i:active {
+    background-color:rgb(245, 146, 109) ;
+}
 
 /* Media queries */
 
 @media only screen and (max-width:991px){
     body > nav > div > button:hover,
     body > nav > div > button:focus {
-        background-color: rgb(245, 146, 109);
+        background-color: rgb(95, 95, 95);
     }
 
     body > nav > div > button:hover #bar,
@@ -208,5 +272,6 @@ button:hover {
     }
     #navbarSupportedContent > ul > li:nth-child(n) > a {
         padding: 10px 0;
+
     }
 }
