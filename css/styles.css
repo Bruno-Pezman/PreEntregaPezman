@@ -7,7 +7,7 @@
 /* Estilos Body */
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* Estilos h */
@@ -15,8 +15,6 @@ body {
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: rgb(15, 15, 15);
-    text-transform: uppercase;
 }
 
 #title {
@@ -26,7 +24,6 @@ h1 {
 h2 {
     font-size: 1.8rem;
     font-weight: 600;
-    color: rgb(15, 15, 15);
 }
 
 h3 {
@@ -41,8 +38,7 @@ h4 {
 
 h5 {
     font-size: 1.2rem;
-    font-weight: 500;
-    color: black;
+    font-weight: 400;
 }
 
 #subtitle {
@@ -53,7 +49,6 @@ h5 {
 /* Estilos p */
 p {
     line-height: 1.2;
-    color: rgb(15, 15, 15);
 }
 
 
@@ -67,6 +62,7 @@ p {
     font-size: 16px;
     top: 0;
     left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -122,6 +118,9 @@ p {
 
 }
 
+section div h5 {
+    font-family: 'Oswald', sans-serif;;
+}
 /* Estilos productos */
 
 .product {
@@ -159,6 +158,13 @@ p {
     align-items: center;
 }
 
+.product img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;     
+    object-fit: cover;
+}
+
 /* Estilos button */
 
 button {
@@ -178,12 +184,28 @@ button:hover {
     background-color: rgb(245, 146, 109);
 }
 
+/* Estilos pagination */
+#destacados > div.row.mx-auto.container > nav > ul > li.page-item.active > a {
+    background-color: black;
+}
+#destacados > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover > a {
+    background-color:rgb(245, 146, 109); 
+    color: #fff;
+}
+
+.pagination a {
+    color: #000;
+}
+
 /* Estilos hr */
 
 hr {
     width: 30px;
     height: 2px;
-    background-color: rgb(245, 146, 109);
+    background-color: #fb774b;;
+    color: #fb774b;
+    border: 2px solid ;   
+    opacity: 0.85;
 }
 
 /* Estilos star */

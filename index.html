@@ -28,7 +28,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
         <div class="container">
             <a href="index.html">
                 <img src="img/favicon.ico" alt="Rock Merch & Roll">
@@ -39,10 +39,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="pages/shop.html">Shop</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="">Ayuda</a>
@@ -52,12 +52,14 @@
                     </li>
                     <li class="nav-item">
                         <i class='bx bx-search-alt-2'></i>
-                        <i class='bx bxs-shopping-bag' ></i>
+                        <i class='bx bxs-shopping-bag'></i>
                     </li>
                 </ul>    
             </div>
         </div>
     </nav>
+
+    <!-- Home section -->
     <section id="home">
         <div class="container">
             <h1 id="title" class="display-4">Rock Merch & Roll</h1>
@@ -65,6 +67,55 @@
             <button>Compra Ahora</button>
         </div>
     </section>
+
+    <!-- Brand services section -->
+    <section id="banner-services">
+        <div class="container">
+            <div class="row">
+                <div class="service-item-container col-md p-0 px-md-3 py-5">
+                    <div class="service-item mx-4 mx-md-0">    
+                        <div class="row align-items-flex-start mx-0">
+                            <div class="col-auto px-5">
+                                <i class='bx bxs-truck bx-md'></i>
+                            </div>
+                            <div class="col p-0">
+                                <h4>Envíos gratis</h4>
+                                <p>A partir de compras superiores a $20.000</p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item-container col-md p-0 px-md-3 py-5">
+                    <div class="service-item mx-4 mx-md-0">    
+                        <div class="row align-items-flex-start mx-0">
+                            <div class="col-auto px-5">
+                                <i class='bx bxs-credit-card bx-md'></i>
+                            </div>
+                            <div class="col p-0">
+                                <h4>3 y 6 cuotas sin interés</h4>
+                                <p>Pagando con tarjetas de crédito bancarias</p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item-container col-md p-0 px-md-3 py-5">
+                    <div class="service-item mx-4 mx-md-0">    
+                        <div class="row align-items-flex-start mx-0">
+                            <div class="col-auto px-5">
+                                <i class='bx bxs-user-check bx-md'></i>
+                            </div>
+                            <div class="col p-0">
+                                <h4>Compra de manera segura</h4>
+                                <p>Protegemos tus datos</p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Brand Section -->
     <section id="brand" class="container">
         <div class="row m-0 py-5">
             <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/acdc-logo.jpg" alt="">
@@ -76,76 +127,77 @@
         </div>
     </section>
 
+    <!-- Destacados section -->
     <section id="destacados" class="my-5 pb-5">
         <div class="container text-center mt-5 py-5">
             <h2>Destacado</h2>
             <hr class="mx-auto">
             <h5>Aca vas a poder observar los produtos con los mejores precios de la temporada.</h5>
         </div>
-        <div>
-            <div class="row mx-auto container-fluid">
-                <div class="product text-center col-lg-3 col-md-4 col-12">            
-                    <img class="img-fluid mb-3" src="img/busoacdc.png" alt="Buso ACDC"> 
-                    <div class="star">
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                    </div>
-                    <h5 class="product-name">Buso ACDC</h5>
-                    <h4 class="product price">$5000</h4>
-                    <button class="buy-btn">Comprar</button>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">            
+                <img class="img-fluid mb-3" src="img/busoacdc.png" alt="Buso ACDC"> 
+                <div class="star">
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
                 </div>
-                <div class="product text-center col-lg-3 col-md-4 col-12">            
-                    <img class="img-fluid mb-3" src="img/remerapinkfloyd.png" alt="Remera Pink Floyd"> 
-                    <div class="star">
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                    </div>
-                    <h5 class="product-name">Remera Pink Floyd</h5>
-                    <h4 class="product price">$4500</h4>
-                    <button class="buy-btn">Comprar</button>
-                </div>
-                <div class="product text-center col-lg-3 col-md-4 col-12">            
-                    <img class="img-fluid mb-3" src="img/remerabonjovi.png" alt="Remera Bon Jovi"> 
-                    <div class="star">
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                    </div>
-                    <h5 class="product-name">Gorro Nirvana</h5>
-                    <h4 class="product price">$1200</h4>
-                    <button class="buy-btn">Comprar</button>
-                </div>
-                <div class="product text-center col-lg-3 col-md-4 col-12">            
-                    <img class="img-fluid mb-3" src="img/remeradoors.png" alt="Remera The Doors"> 
-                    <div class="star">
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                        <i class='bx bxs-star warning' ></i>
-                    </div>
-                    <h5 class="product-name">Remera The Doors</h5>
-                    <h4 class="product price">$4500</h4>
-                    <button class="buy-btn">Comprar</button>
-                </div>
+                <h5 class="product-name">Buso ACDC</h5>
+                <h4 class="product price">$5000</h4>
+                <button class="buy-btn">Comprar</button>
             </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">            
+                <img class="img-fluid mb-3" src="img/remerapinkfloyd.png" alt="Remera Pink Floyd"> 
+                <div class="star">
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
+                </div>
+                <h5 class="product-name">Remera Pink Floyd</h5>
+                <h4 class="product price">$4500</h4>
+                <button class="buy-btn">Comprar</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">            
+                <img class="img-fluid mb-3" src="img/remerabonjovi.png" alt="Remera Bon Jovi"> 
+                <div class="star">
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
+                </div>
+                <h5 class="product-name">Gorro Nirvana</h5>
+                <h4 class="product price">$1200</h4>
+                <button class="buy-btn">Comprar</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">            
+                <img class="img-fluid mb-3" src="img/remeradoors.png" alt="Remera The Doors"> 
+                <div class="star">
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
+                    <i class='bx bxs-star warning' ></i>
+                </div>
+                <h5 class="product-name">Remera The Doors</h5>
+                <h4 class="product price">$4500</h4>
+                <button class="buy-btn">Comprar</button>
+            </div>
+        </div>
     </section>
     
+    <!-- Footer -->
     <footer class="mt-5 py-5">
         <div class="row container mx-auto pt-5">
             <div class="footer-one col-lg-3 col-md-6 col-12">
-                <img src="img/android-chrome-192x192.png" alt="Rock Merch & Roll">
+                <img src="img/android-chrome-192x192.png" class="pb-4" alt="Rock Merch & Roll">
             </div>
-            <div class="footer-one col-lg-3 col-md-6 col-12">
-                <h5 class="pb-2">Destacado</h5>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Categorías</h5>
                 <ul class="text-uppercase list-unstyled">
                     
                     <li><a href="#">Remeras</a></li>
@@ -155,7 +207,7 @@
                     
                 </ul>
             </div>
-            <div class="footer-one col-lg-3 col-md-6 col-12">
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
                 <h5 class="pb-2">Contactanos</h5>
                 <div>
                     <h6 class="text-uppercase">Dirección</h6>
@@ -167,26 +219,20 @@
                 </div>
                 <div>
                     <h6 class="text-uppercase">Email</h6>
-                    <p>rockmerchandroll@gmai.com</p>
+                    <p>ventas@rockmerchandroll.com.ar</p>
                 </div>
             </div>
-            <div class="footer-one col-lg-3 col-md-6 col-12">  
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-4"> 
                 <i class='bx bxl-instagram  bx-lg' ></i>
                 <i class='bx bxl-twitter  bx-lg' ></i>
                 <i class='bx bxl-facebook-square  bx-lg' ></i>     
             </div>
-            <div class="copyright mt-5">
+            <div class="copyright mt-5 text-nowrap mb-2">
                 <p>Rock Merch & Roll © 2022. Todos los derechos reservados.</p>
             </div>
             
         </div>
     </footer>
-         
-    
-    
-
-
-    
 
     <!-- Link a JS -->
     <script src="js/stock.js"></script>

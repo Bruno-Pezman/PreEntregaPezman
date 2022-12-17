@@ -27,6 +27,7 @@ const productos = [
         talle: "M",
         cantidad:0
     },
+
     {
         id:4,
         nombre: "Remera Bon Jovi",
@@ -47,6 +48,16 @@ const productos = [
     },
     {
         id:6,
+        nombre: "Remera Pink Floyd B",
+        tipo: "remera",
+        descripcion:"Pink Floyd - negra - estampado",
+        precio: 4500,
+        talle: "S",
+        cantidad:0
+    },
+
+    {
+        id:7,
         nombre: "Remera The Doors",
         tipo: "remera",
         descripcion:"The Doors - negra - estampado",
@@ -54,8 +65,46 @@ const productos = [
         talle: "S",
         cantidad:0
     },
+
     {
-        id:7,
+        id:8,
+        nombre: "Remera KISS B",
+        tipo: "remera",
+        descripcion:"KISS - negra",
+        precio: 4500,
+        talle: "S",
+        cantidad:0
+    },
+    {
+        id:9,
+        nombre: "Remera Aerosmith W",
+        tipo: "remera",
+        descripcion:"Aerosmith - blanca - estampado",
+        precio: 4500,
+        talle: "S",
+        cantidad:0
+    },
+    {
+        id:10,
+        nombre: "Remera queen W",
+        tipo: "remera",
+        descripcion:"queen - blanca - estampado",
+        precio: 4500,
+        talle: "S",
+        cantidad:0
+    },
+    {
+        id:11,
+        nombre: "Remera Los Ramones R",
+        tipo: "remera",
+        descripcion:"Los Ramones - roja - estampado",
+        precio: 4500,
+        talle: "S",
+        cantidad:0
+    },
+    
+    {
+        id:12,
         nombre: "Buzo AC/DC",
         tipo: "buzo",
         descripcion:"AC/DC - negro - liso",
@@ -64,7 +113,7 @@ const productos = [
         cantidad:0
     },
     {
-        id:8,
+        id:13,
         nombre: "Buzo Rolling Stones",
         tipo: "buzo",
         descripcion:"Rolling Stones - negro con gris",
@@ -73,21 +122,37 @@ const productos = [
         cantidad:0
     },
     {
-        id:9,
+        id:14,
         nombre: "Gorro Nirvana",
-        tipo: "gorro",
+        tipo: "accesorio",
         descripcion:"Nirvana - blanco - estampado",
         precio: 1500,
         cantidad:0
     },
     {
-        id:9,
+        id:15,
         nombre: "Gorro Red Hot Chili Peppers",
-        tipo: "gorro",
+        tipo: "accesorio",
         descripcion:"Red Hot Chili Peppers - blanca con negro - estampado",
         precio: 1500,
         cantidad:0
-    }
+    },
+    {
+        id:16,
+        nombre: "Chop Queen",
+        tipo: "vaso",
+        descripcion:"Chop Queen - blanco",
+        precio: 1500,
+        cantidad:0
+    },
+    {
+        id:17,
+        nombre: "taza AC/DC",
+        tipo: "vaso",
+        descripcion:"taza AC/DC - negra- estampado",
+        precio: 1500,
+        cantidad:0
+    },
 ]
 
 
