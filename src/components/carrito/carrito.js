@@ -9,7 +9,7 @@ productosDestacados.addEventListener('click', (e) => {
     }
 });
 
-// Funcion validar la repetición de productos
+// Validar la repetición de productos
 const validarProductoRepetido = (productoId) => {
     const productoRepetido = carrito.find(producto => producto.id == productoId);
 
@@ -27,6 +27,7 @@ const validarProductoRepetido = (productoId) => {
     }
 };
 
+// Mostrar los productos dentro del carrito
 const pintarProductoCarrito = (producto) => {
     const carritoContenedor = document.getElementById('carrito-contenedor');
     const div = document.createElement('div');
@@ -41,7 +42,7 @@ const pintarProductoCarrito = (producto) => {
 
 };
 
-// Función para eliminar productos del carrito
+// Eliminar productos del carrito
 const eliminarProductoCarrito = (productoId) => {
     const productoIndex = carrito.findIndex(producto => producto.id == productoId);
     carrito.splice(productoIndex, 1);
@@ -49,6 +50,7 @@ const eliminarProductoCarrito = (productoId) => {
     actualizarTotalCarrito(carrito);
 };
 
+//Actualizar los productos dentro del carrito
 const actualizarCarrito = (carrito) => {
     const contenedor = document.getElementById('carrito-contenedor');
 
@@ -67,6 +69,7 @@ const actualizarCarrito = (carrito) => {
     });
 };
 
+// Storage de productos 
 const guardarCarritoStorage = (carrito) => {
     localStorage.setItem('carrito', JSON.stringify(carrito));
 };
@@ -76,6 +79,7 @@ const obtenerCarritoStorage = () => {
     return carritoStorage;
 };
 
+// Actualizar el total de la compra
 const actualizarTotalCarrito = (carrito) => {
     const totalCantidad = carrito.reduce((acc, item) => acc + item.cantidad, 0);
     const totalCompra = carrito.reduce((acc, item) => acc + (item.precio * item.cantidad), 0);
@@ -84,6 +88,7 @@ const actualizarTotalCarrito = (carrito) => {
     guardarCarritoStorage(carrito);
 };
 
+// Mostrar el precio total de la compra
 const pintarTotalCarrito = (totalCantidad, totalCompra) => {
     const contadorCarrito = document.getElementById('contador-carrito');
     const precioTotal = document.getElementById('precioTotal');

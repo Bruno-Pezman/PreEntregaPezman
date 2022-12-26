@@ -1,3 +1,5 @@
+// Modal
+
 const modalContenedor = document.querySelector('.modal-contenedor');
 const abrirCarrito = document.getElementById('tienda');
 const cerrarCarrito = document.getElementById('btn-cerrar-carrito');
