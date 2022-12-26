@@ -7,8 +7,7 @@ const productos = [
         img: "../img/remerathebeatles.png",
         descripcion: "The Beatles - negra - lisa",
         precio: 4000,
-        talle: "L",
-        cantidad:0
+        cantidad:1
     },
     {
         id: 2,
@@ -17,8 +16,7 @@ const productos = [
         img: '../img/remeraacdc.png',
         descripcion: "AC/DC - Negra - lisa",
         precio: 4000,
-        talle: "L",
-        cantidad:0
+        cantidad:1
     },
     {
         id:3,
@@ -27,8 +25,7 @@ const productos = [
         tipo: "remera",
         descripcion:"Led Zeppelin - negra - estampado",
         precio: 4500,
-        talle: "M",
-        cantidad:0
+        cantidad:1
     },
 
     {
@@ -38,8 +35,7 @@ const productos = [
         tipo: "remera",
         descripcion:"Bon Jovi - azul marino - lisa",
         precio: 4000,
-        talle: "M",
-        cantidad:0
+        cantidad:1
     },
     {
         id:5,
@@ -48,8 +44,7 @@ const productos = [
         tipo: "remera",
         descripcion:"Pink Floyd - gris oscuro - estampado",
         precio: 4500,
-        talle: "L",
-        cantidad:0
+        cantidad:1
     },
     {
         id:6,
@@ -58,8 +53,7 @@ const productos = [
         tipo: "remera",
         descripcion:"Pink Floyd - negra - estampado",
         precio: 4500,
-        talle: "S",
-        cantidad:0
+        cantidad:1
     },
 
     {
@@ -69,8 +63,7 @@ const productos = [
         tipo: "remera",
         descripcion:"The Doors - negra - estampado",
         precio: 4500,
-        talle: "S",
-        cantidad:0
+        cantidad:1
     },
 
     {
@@ -80,8 +73,7 @@ const productos = [
         tipo: "remera",
         descripcion:"KISS - negra",
         precio: 4500,
-        talle: "S",
-        cantidad:0
+        cantidad:1
     },
     {
         id:9,
@@ -90,8 +82,7 @@ const productos = [
         tipo: "remera",
         descripcion:"Aerosmith - blanca - estampado",
         precio: 4500,
-        talle: "S",
-        cantidad:0
+        cantidad:1
     },
     {
         id:10,
@@ -100,8 +91,7 @@ const productos = [
         tipo: "remera",
         descripcion:"queen - blanca - estampado",
         precio: 4500,
-        talle: "S",
-        cantidad:0
+        cantidad:1
     },
     {
         id:11,
@@ -110,8 +100,7 @@ const productos = [
         tipo: "remera",
         descripcion:"Los Ramones - roja - estampado",
         precio: 4500,
-        talle: "S",
-        cantidad:0
+        cantidad:1
     },
     
     {
@@ -121,8 +110,7 @@ const productos = [
         tipo: "buzo",
         descripcion:"AC/DC - negro - liso",
         precio: 4000,
-        talle: "M",
-        cantidad:0
+        cantidad:1
     },
     {
         id:13,
@@ -131,8 +119,7 @@ const productos = [
         tipo: "buzo",
         descripcion:"Rolling Stones - negro con gris",
         precio: 5000,
-        talle: "M",
-        cantidad:0
+        cantidad:1
     },
     {
         id:14,
@@ -141,7 +128,7 @@ const productos = [
         tipo: "accesorio",
         descripcion:"Nirvana - blanco - estampado",
         precio: 1500,
-        cantidad:0
+        cantidad:1
     },
     {
         id:15,
@@ -150,7 +137,7 @@ const productos = [
         tipo: "accesorio",
         descripcion:"Red Hot Chili Peppers - blanca con negro - estampado",
         precio: 1500,
-        cantidad:0
+        cantidad:1
     },
     {
         id:16,
@@ -159,7 +146,7 @@ const productos = [
         tipo: "vaso",
         descripcion:"Chop Queen - blanco",
         precio: 1500,
-        cantidad:0
+        cantidad:1
     },
     {
         id:17,
@@ -168,8 +155,8 @@ const productos = [
         tipo: "vaso",
         descripcion:"taza AC/DC - negra- estampado",
         precio: 1500,
-        cantidad:0
+        cantidad:1
     },
-]
+];
 
 
