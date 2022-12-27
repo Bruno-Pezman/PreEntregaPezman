@@ -20,7 +20,7 @@ const pintarProductos = () => {
             <h5 class="product-name">${producto.nombre}</h5>
             <h4 class="product price">$${producto.precio}</h4>
         
-            <button id="${producto.id}" class="buy-btn agregar">Comprar</button>
+            <button id="${producto.id}" class="buy-btn agregar"><i class='bx bx-cart-add bx-sm'></i></button>
         `
         productosDestacados.appendChild(div);
 

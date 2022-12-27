@@ -3,23 +3,26 @@ let carrito = [];
 
 const productosDestacados = document.getElementById('productosDestacados');
 
+// Identificar por ID el producto a comprar
 productosDestacados.addEventListener('click', (e) => {
     if (e.target.classList.contains('agregar')) {
         validarProductoRepetido(e.target.id)
     }
 });
 
-// Validar la repetición de productos
+// Validar que un producto esté repetido
 const validarProductoRepetido = (productoId) => {
     const productoRepetido = carrito.find(producto => producto.id == productoId);
 
     if (!productoRepetido) {
+        // Agregar los productos al carrito que no esten repetidos
         const producto = productos.find(producto => producto.id == productoId);
         carrito.push(producto);
         pintarProductoCarrito(producto);
         guardarCarritoStorage(carrito);
         actualizarTotalCarrito(carrito);
     } else {
+        // Aumentar la cantidad de un producto que ya se encuentre en el carrito
         productoRepetido.cantidad++
         const cantidadProducto = document.getElementById(`cantidad${productoRepetido.id}`);
         cantidadProducto.innerText = `Cantidad: ${productoRepetido.cantidad}`
@@ -33,10 +36,10 @@ const pintarProductoCarrito = (producto) => {
     const div = document.createElement('div');
     div.classList.add('productoEnCarrito');
     div.innerHTML = `
-    <p>${producto.nombre}</p>
-    <p>Precio: ${producto.precio}</p>
-    <p id=cantidad${producto.id}>Cantidad: ${producto.cantidad}</p>
-    <button class="btn waves-effect waves-ligth boton-eliminar" value="${producto.id}">X</button>
+    <p class="py-3">${producto.nombre}</p>
+    <p class="py-3">Precio: $${producto.precio}</p>
+    <p class="py-3" id=cantidad${producto.id}>Cantidad: ${producto.cantidad}</p>
+    <button class="pb-4 btn waves-effect waves-ligth boton-eliminar" value="${producto.id}">x</button>
     `
     carritoContenedor.appendChild(div);
 
@@ -50,7 +53,7 @@ const eliminarProductoCarrito = (productoId) => {
     actualizarTotalCarrito(carrito);
 };
 
-//Actualizar los productos dentro del carrito
+// Actualizar los productos dentro del carrito
 const actualizarCarrito = (carrito) => {
     const contenedor = document.getElementById('carrito-contenedor');
 
@@ -60,10 +63,10 @@ const actualizarCarrito = (carrito) => {
         const div = document.createElement('div');
         div.classList.add('productoEnCarrito');
         div.innerHTML += `
-            <p>${producto.nombre}</p>
-            <p>Precio: ${producto.precio}</p>
-            <p id=cantidad${producto.id}>Cantidad: ${producto.cantidad}</p>
-            <button class="btn waves-effect waves-ligth boton-eliminar" value="${producto.id}">X</button>
+            <p class="py-3">${producto.nombre}</p>
+            <p class="py-3">Precio: ${producto.precio}</p>
+            <p class="py-3" id=cantidad${producto.id}>Cantidad: ${producto.cantidad}</p>
+            <button class="pb-4 btn waves-effect waves-ligth boton-eliminar" value="${producto.id}">x</button>
         `
         contenedor.appendChild(div);
     });
@@ -79,7 +82,7 @@ const obtenerCarritoStorage = () => {
     return carritoStorage;
 };
 
-// Actualizar el total de la compra
+// Actualizar el total de productos en el carrito
 const actualizarTotalCarrito = (carrito) => {
     const totalCantidad = carrito.reduce((acc, item) => acc + item.cantidad, 0);
     const totalCompra = carrito.reduce((acc, item) => acc + (item.precio * item.cantidad), 0);
@@ -88,7 +91,7 @@ const actualizarTotalCarrito = (carrito) => {
     guardarCarritoStorage(carrito);
 };
 
-// Mostrar el precio total de la compra
+// Mostrar la cantidad y el precio total de la compra
 const pintarTotalCarrito = (totalCantidad, totalCompra) => {
     const contadorCarrito = document.getElementById('contador-carrito');
     const precioTotal = document.getElementById('precioTotal');
@@ -96,4 +99,4 @@ const pintarTotalCarrito = (totalCantidad, totalCompra) => {
 
     contadorCarrito.innerText = totalCantidad;
     precioTotal.innerText = totalCompra;
-};
+}; 

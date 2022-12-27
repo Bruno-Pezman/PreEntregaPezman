@@ -120,7 +120,7 @@ p {
 }
 
 section div h5 {
-    font-family: 'Oswald', sans-serif;;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* Carrito */
@@ -202,10 +202,11 @@ section div h5 {
 }
   
 .boton-eliminar {
-    background-color: white;
+    background-color: rgb(253, 243, 243);
     color: rgb(245, 146, 109);
     border: none;
     font-size: 20px;
+    font-family:'Oswald', sans-serif ;
 }
   
 .boton-eliminar:hover {
