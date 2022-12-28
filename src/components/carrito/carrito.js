@@ -95,7 +95,6 @@ const actualizarTotalCarrito = (carrito) => {
 const pintarTotalCarrito = (totalCantidad, totalCompra) => {
     const contadorCarrito = document.getElementById('contador-carrito');
     const precioTotal = document.getElementById('precioTotal');
-    console.log(contadorCarrito, precioTotal)
 
     contadorCarrito.innerText = totalCantidad;
     precioTotal.innerText = totalCompra;
