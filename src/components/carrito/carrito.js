@@ -39,10 +39,11 @@ const pintarProductoCarrito = (producto) => {
     <p class="py-3">${producto.nombre}</p>
     <p class="py-3">Precio: $${producto.precio}</p>
     <p class="py-3" id=cantidad${producto.id}>Cantidad: ${producto.cantidad}</p>
-    <button class="pb-4 btn waves-effect waves-ligth boton-eliminar" value="${producto.id}">x</button>
+    <button id="btn-eliminar" class="pb-4 btn waves-effect waves-ligth boton-eliminar bx bx-x" value="${producto.id}"></button>
     `
     carritoContenedor.appendChild(div);
 
+    div.addEventListener('click', alertaProductoEliminado);
 };
 
 // Eliminar productos del carrito
@@ -51,6 +52,24 @@ const eliminarProductoCarrito = (productoId) => {
     carrito.splice(productoIndex, 1);
     actualizarCarrito(carrito);
     actualizarTotalCarrito(carrito);
+
+};
+
+// Alerta cada vez que elimino un producto
+const alertaProductoEliminado = () => {
+    
+    Toastify({
+        text: "Producto eliminado!",
+        duration: 1500,
+        offset: {
+            x: 20,
+            y: 100 
+        },
+        style: {
+            background: 'rgb(245, 146, 109)',
+            color: 'white',
+        }
+    }).showToast();   
 };
 
 // Actualizar los productos dentro del carrito
@@ -66,11 +85,14 @@ const actualizarCarrito = (carrito) => {
             <p class="py-3">${producto.nombre}</p>
             <p class="py-3">Precio: ${producto.precio}</p>
             <p class="py-3" id=cantidad${producto.id}>Cantidad: ${producto.cantidad}</p>
-            <button class="pb-4 btn waves-effect waves-ligth boton-eliminar" value="${producto.id}">x</button>
+            <button id="btn-eliminar" class="pb-4 btn waves-effect waves-ligth boton-eliminar bx bx-x" value="${producto.id}"></button>
         `
         contenedor.appendChild(div);
+
+        div.addEventListener('click', alertaProductoEliminado);
     });
 };
+
 
 // Storage de productos 
 const guardarCarritoStorage = (carrito) => {
