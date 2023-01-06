@@ -130,6 +130,18 @@
             <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/thewho-logo.png" alt="">       
         </div>
     </section>
+
+    <!-- Carrito -->
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+          <h3>Carrito</h3>
+          <button id="btn-cerrar-carrito"><i class='bx bxs-x-circle'></i></i></button>
+          <div id="carrito-contenedor">
+            
+          </div>
+          <p class="precioProducto">Precio Total: $<span id="precioTotal"></span></p>
+        </div>
+    </div>
     
     <!-- Footer -->
     <footer class="mt-5 py-5">
@@ -174,6 +186,12 @@
             
         </div>
     </footer>
+
+    <script src="src/components/data/stock.js"></script>
+    <script src="src/components/carrito/modal.js"></script>
+    <script src="src/components/carrito/carrito.js"></script>
+    <script src="src/app.js"></script>
+    <script src="src/index.js"></script>
 
     <!-- Link Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

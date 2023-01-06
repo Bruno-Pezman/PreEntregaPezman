@@ -26,3 +26,4 @@ const pintarProductos = () => {
 
     })    
 };
+
