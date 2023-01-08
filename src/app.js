@@ -1,11 +1,12 @@
-// Pintar productos
+// Pintar productos en la página
 
-const pintarProductos = () => { 
+const pintarProductos = async () => { 
+    
     const productosDestacados = document.getElementById('productosDestacados');
 
+    const productos = await homeController() 
+    
     productos.forEach( producto => {
-
-        // Div con los productos a comprar
         const div = document.createElement('div');
         div.classList.add('product', 'text-center', 'col-lg-3', 'col-md-4', 'col-12');
         div.innerHTML += `         
