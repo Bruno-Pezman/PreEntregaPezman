@@ -1,11 +1,9 @@
-
+fetch('../src/components/data/stock.json')
+    .then(response => response.json)
+    .then(data => pintarProductos(data)) 
 // Pintar productos en el shop
-const pintarProductos = async () => { 
+const pintarProductos = (producto) => { 
     const productosDestacados = document.getElementById('productosDestacados');    
-
-    const resp = await fetch('../src/components/data/stock.json')
-    const data = await resp.json()
-    console.log(data)
     
     data.forEach(producto => {
         const div = document.createElement('div');
