@@ -3,7 +3,7 @@
 const pintarProductos = async () => { 
     const productosDestacados = document.getElementById('productosDestacados');    
     
-    const resp = fetch('../src/components/data/stock.json')
+    const resp = await fetch('../src/components/data/stock.json')
     const data = await resp.json()
    
     data.forEach(producto => {
