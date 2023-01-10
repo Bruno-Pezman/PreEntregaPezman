@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    pintarProductos();
+    pintarProductos(data);
 
     if (localStorage.getItem('carrito')) {
         // Invoco a las funciones de carrito.js
