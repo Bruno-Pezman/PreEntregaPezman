@@ -16,7 +16,7 @@ const validarProductoRepetido = (productoId) => {
 
     if (!productoRepetido) {
         // Agregar los productos al carrito que no esten repetidos
-        const producto = productos.find(producto => producto.id == productoId);
+        const producto = data.find(producto => producto.id == productoId);
         carrito.push(producto);
         pintarProductoCarrito(producto);
         guardarCarritoStorage(carrito);
