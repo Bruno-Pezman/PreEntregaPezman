@@ -1,12 +1,12 @@
 fetch('../src/components/data/stock.json')
-    .then(response => response.json)
+    .then(res => res.json)
     .then(data => pintarProductos(data)) 
 
 // Pintar productos en el shop
-const pintarProductos = (data) => { 
+const pintarProductos = (productos) => { 
     const productosDestacados = document.getElementById('productosDestacados');    
     
-    data.forEach(producto => {
+    productos.forEach(producto => {
         const div = document.createElement('div');
         div.classList.add('product', 'text-center', 'col-lg-3', 'col-md-4', 'col-12');
         div.innerHTML += `         
