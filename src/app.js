@@ -1,11 +1,8 @@
 
 // Pintar productos en el shop
-const pintarProductos = async () => { 
+const pintarProductos = () => { 
     const productosDestacados = document.getElementById('productosDestacados');    
     
-    const resp = await fetch('../src/components/data/stock.json')
-    const data = await resp.json()
-   
     data.forEach(producto => {
         const div = document.createElement('div');
         div.classList.add('product', 'text-center', 'col-lg-3', 'col-md-4', 'col-12');
