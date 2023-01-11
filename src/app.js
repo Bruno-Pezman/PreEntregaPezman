@@ -26,10 +26,10 @@ const pintarProductos = (data) => {
 
     // Identificar por ID el producto a comprar
     productosDestacados.addEventListener('click', (e) => {
-    if (e.target.classList.contains('agregar')) {
-        validarProductoRepetido(e.target.id)
-    }
-});
+        if (e.target.classList.contains('agregar')) {
+            validarProductoRepetido(e.target.id)
+        }
+    });
 };
 
 // array de productos
