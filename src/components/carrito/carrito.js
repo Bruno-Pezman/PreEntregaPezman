@@ -6,9 +6,17 @@ const productosDestacados = document.getElementById('productosDestacados');
 // Identificar por ID el producto a comprar
 productosDestacados.addEventListener('click', (e) => {
     if (e.target.classList.contains('agregar')) {
-        validarProductoRepetido(e.target.id)
+        agregarAlCarrito()
+        
     }
 });
+
+const agregarAlCarrito = async () => {
+    const resp = await fetch('../src/components/data/stock.json')
+    const data = await resp.json()
+
+    validarProductoRepetido(e.target.id)
+} 
 
 // Validar que un producto esté repetido
 const validarProductoRepetido = (productoId) => {
@@ -16,8 +24,6 @@ const validarProductoRepetido = (productoId) => {
 
     if (!productoRepetido) {
         // Agregar los productos al carrito que no esten repetidos
-        const resp = await fetch('../src/components/data/stock.json')
-        const data = await resp.json()
         const producto = data.find(producto => producto.id == productoId);
         carrito.push(producto);
         pintarProductoCarrito(producto);
