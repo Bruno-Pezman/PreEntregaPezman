@@ -1,4 +1,8 @@
-
+const url = '../data/stock.json'
+    fetch(url)
+    .then(res => res.json()) 
+    .then(data => pintarProductos(data))
+    
 // Pintar productos en el shop
 const pintarProductos = (data) => { 
     const productosDestacados = document.getElementById('productosDestacados');    
