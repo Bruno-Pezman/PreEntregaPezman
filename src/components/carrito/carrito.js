@@ -16,6 +16,8 @@ const validarProductoRepetido = (productoId) => {
 
     if (!productoRepetido) {
         // Agregar los productos al carrito que no esten repetidos
+        const resp = await fetch('../src/components/data/stock.json')
+        const data = await resp.json()
         const producto = data.find(producto => producto.id == productoId);
         carrito.push(producto);
         pintarProductoCarrito(producto);
