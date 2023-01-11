@@ -15,7 +15,7 @@ const agregarAlCarrito = async () => {
     const resp = await fetch('../src/components/data/stock.json')
     const data = await resp.json()
 
-    validarProductoRepetido(e.target.id)
+    
 } 
 
 // Validar que un producto esté repetido
