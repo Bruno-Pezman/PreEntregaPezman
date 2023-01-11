@@ -24,16 +24,18 @@ const pintarProductos = (data) => {
 
     })    
 
-    const btnComprar = document.querySelectorAll('.buy-btn');
-    btnComprar.forEach((e) => {
-        e.addEventListener('click', agregarAlCarrito)
-    })
+  
 };
 
 // array de productos
-let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+let carrito = [];
 
-const agregarAlCarrito = (e) => {
-    let id = e.target.id
-    console.log(id)
-}
+const productosDestacados = document.getElementById('productosDestacados');
+
+// Identificar por ID el producto a comprar
+productosDestacados.addEventListener('click', (e) => {
+    if (e.target.classList.contains('agregar')) {
+        console.log(e)
+    }
+});
+
