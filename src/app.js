@@ -35,7 +35,25 @@ const productosDestacados = document.getElementById('productosDestacados');
 // Identificar por ID el producto a comprar
 productosDestacados.addEventListener('click', (e) => {
     if (e.target.classList.contains('agregar')) {
-        console.log(e.target.id)
+        validarProductoRepetido(e.target.id)
     }
 });
 
+// Validar que un producto esté repetido
+const validarProductoRepetido = (productoId) => {
+    const productoRepetido = carrito.find(producto => producto.id == productoId);
+
+    if (!productoRepetido) {
+        // Agregar los productos al carrito que no esten repetidos
+        const producto = data.find(producto => producto.id == productoId);
+        carrito.push(producto);
+        
+        
+    } else {
+        // Aumentar la cantidad de un producto que ya se encuentre en el carrito
+        productoRepetido.cantidad++
+        const cantidadProducto = document.getElementById(`cantidad${productoRepetido.id}`);
+        cantidadProducto.innerText = `Cantidad: ${productoRepetido.cantidad}`
+       
+    }
+};
