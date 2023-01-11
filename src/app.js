@@ -35,7 +35,7 @@ const productosDestacados = document.getElementById('productosDestacados');
 // Identificar por ID el producto a comprar
 productosDestacados.addEventListener('click', (e) => {
     if (e.target.classList.contains('agregar')) {
-        console.log(e)
+        console.log(e.target.id)
     }
 });
 
