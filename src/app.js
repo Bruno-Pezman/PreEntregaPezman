@@ -24,16 +24,19 @@ const pintarProductos = (data) => {
 
     })    
 
-    // Identificar por ID el producto a comprar
-    productosDestacados.addEventListener('click', (e) => {
-        if (e.target.classList.contains('agregar')) {
-            validarProductoRepetido(e.target.id)
-        }
-    });
+  
 };
 
 // array de productos
 let carrito = [];
+
+const productosDestacados = document.getElementById('productosDestacados'); 
+// Identificar por ID el producto a comprar
+productosDestacados.addEventListener('click', (e) => {
+    if (e.target.classList.contains('agregar')) {
+        validarProductoRepetido(e.target.id)
+    }
+});
 
 // Validar que un producto esté repetido
 const validarProductoRepetido = (productoId) => {
