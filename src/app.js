@@ -4,7 +4,6 @@ const pintarProductos = (data) => {
     const productosDestacados = document.getElementById('productosDestacados');    
     
     data.forEach(producto => {
-        console.log(producto)
         // const div = document.createElement('div');
         // div.classList.add('product', 'text-center', 'col-lg-3', 'col-md-4', 'col-12');
         // div.innerHTML += `         
