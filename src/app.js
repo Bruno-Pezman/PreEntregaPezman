@@ -1,6 +1,6 @@
 
 // Pintar productos en el shop
-const pintarProductos = () => { 
+const pintarProductos = (data) => { 
     const productosDestacados = document.getElementById('productosDestacados');    
     
     data.forEach(producto => {
