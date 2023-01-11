@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('../src/components/data/stock.json')
+    fetch('../data/stock.json')
     .then(res => res.json()) 
     .then(data => pintarProductos(data))
 
