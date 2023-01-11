@@ -7,7 +7,7 @@ const productosDestacados = document.getElementById('productosDestacados');
 productosDestacados.addEventListener('click', (e) => {
     if (e.target.classList.contains('agregar')) {
         agregarAlCarrito()
-        
+        validarProductoRepetido(e.target.id)
     }
 });
 
