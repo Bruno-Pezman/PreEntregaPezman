@@ -6,17 +6,9 @@ const productosDestacados = document.getElementById('productosDestacados');
 // Identificar por ID el producto a comprar
 productosDestacados.addEventListener('click', (e) => {
     if (e.target.classList.contains('agregar')) {
-        agregarAlCarrito()
         validarProductoRepetido(e.target.id)
     }
 });
-
-const agregarAlCarrito = async () => {
-    const resp = await fetch('../src/components/data/stock.json')
-    const data = await resp.json()
-
-    
-} 
 
 // Validar que un producto esté repetido
 const validarProductoRepetido = (productoId) => {
