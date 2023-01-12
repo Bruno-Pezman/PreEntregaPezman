@@ -21,12 +21,13 @@ const pintarProductos = (data) => {
             <button id="${producto.id}" class="buy-btn bx bx-cart-add bx-sm agregar"></button>
         `
         productosDestacados.appendChild(div);
-
-        const btnComprar = document.querySelectorAll('.buy-btn');
-        btnComprar.forEach(el => {
-            el.addEventListener('click', (e) => validarProductoRepetido(e, data))
-        })
+        
     })    
+
+    const btnComprar = document.querySelectorAll('.buy-btn');
+    btnComprar.forEach(el => {
+        el.addEventListener('click', (e) => validarProductoRepetido(e, data))
+    })
 };
 
 // array de productos
