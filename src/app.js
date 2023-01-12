@@ -23,23 +23,24 @@ const pintarProductos = (data) => {
         productosDestacados.appendChild(div);
 
         const btnComprar = document.querySelectorAll('.buy-btn');
-        btnComprar.forEach(el => el.addEventListener('click', validarProductoRepetido))
-
+        btnComprar.forEach(el => {
+            el.addEventListener('click', (e) => validarProductoRepetido(e, data))
+        })
     })    
-
-  
 };
 
 // array de productos
 let carrito = [];
 
 // Validar que un producto esté repetido
-const validarProductoRepetido = (productoId) => {
-    const productoRepetido = carrito.find(producto => producto.id == productoId);
+const validarProductoRepetido = (e, productos) => {
+    let id = e.target.id;
+    console.log(id)
+    const productoRepetido = carrito.find(producto => producto.id == id);
 
     if (!productoRepetido) {
         // Agregar los productos al carrito que no esten repetidos
-        const producto = data.find(producto => producto.id == productoId);
+        const producto = productos.find(producto => producto.id == id);
         carrito.push(producto);
         pintarProductoCarrito(producto);
         guardarCarritoStorage(carrito);
