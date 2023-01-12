@@ -22,6 +22,9 @@ const pintarProductos = (data) => {
         `
         productosDestacados.appendChild(div);
 
+        const btnComprar = document.querySelectorAll('.buy-btn');
+        btnComprar.forEach(el => el.addEventListener('click', validarProductoRepetido))
+
     })    
 
   
@@ -29,15 +32,6 @@ const pintarProductos = (data) => {
 
 // array de productos
 let carrito = [];
-
-const productosDestacados = document.getElementById('productosDestacados');
-
-// Identificar por ID el producto a comprar
-productosDestacados.addEventListener('click', (e) => {
-    if (e.target.classList.contains('agregar')) {
-        validarProductoRepetido(e.target.id)
-    }
-});
 
 // Validar que un producto esté repetido
 const validarProductoRepetido = (productoId) => {
