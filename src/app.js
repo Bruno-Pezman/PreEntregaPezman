@@ -75,7 +75,7 @@ const pintarProductoCarrito = (producto) => {
 const eliminarProductoCarrito = (productoId) => {
     const productoIndex = carrito.findIndex(producto => producto.id == productoId);
 
-    if (producto.cantidad === 1) {
+    if (carrito[productoIndex].cantidad === 1) {
         carrito.splice(productoIndex, 1);
         actualizarCarrito(carrito);
         actualizarTotalCarrito(carrito);
