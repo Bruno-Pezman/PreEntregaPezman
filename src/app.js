@@ -74,10 +74,16 @@ const pintarProductoCarrito = (producto) => {
 // Eliminar productos del carrito
 const eliminarProductoCarrito = (productoId) => {
     const productoIndex = carrito.findIndex(producto => producto.id == productoId);
-    carrito.splice(productoIndex, 1);
-    actualizarCarrito(carrito);
-    actualizarTotalCarrito(carrito);
 
+    if(producto.cantidad === 1) {
+        carrito.splice(productoIndex, 1);
+        actualizarCarrito(carrito);
+        actualizarTotalCarrito(carrito);
+    } else {
+        carrito.splice(productoIndex, producto.cantidad--);
+        actualizarCarrito(carrito);
+        actualizarTotalCarrito(carrito);
+    }  
 };
 
 // Alerta cada vez que elimino un producto
