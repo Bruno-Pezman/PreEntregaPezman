@@ -23,7 +23,7 @@ const pintarProductos = (data) => {
         productosDestacados.appendChild(div);
         
     })    
-
+    
     const btnComprar = document.querySelectorAll('.buy-btn');
     btnComprar.forEach(el => {
         el.addEventListener('click', (e) => validarProductoRepetido(e, data))
