@@ -61,9 +61,9 @@ const pintarProductoCarrito = (producto) => {
     const div = document.createElement('div');
     div.classList.add('productoEnCarrito');
     div.innerHTML = `
-    <p class="py-3 text-wrap">${producto.nombre}</p>
-    <p class="py-3 text-wrap">Precio: $${producto.precio}</p>
-    <p class="py-3 text-wrap" id=cantidad${producto.id}>Cantidad: ${producto.cantidad}</p>
+    <p class="py-3 col-3">${producto.nombre}</p>
+    <p class="py-3 col-3">Precio: $${producto.precio}</p>
+    <p class="py-3 col-3" id=cantidad${producto.id}>Cantidad: ${producto.cantidad}</p>
     <button id="btn-eliminar" class="pb-4 btn waves-effect waves-ligth boton-eliminar bx bx-x" value="${producto.id}"></button>
     `
     carritoContenedor.appendChild(div);
@@ -113,9 +113,9 @@ const actualizarCarrito = (carrito) => {
         const div = document.createElement('div');
         div.classList.add('productoEnCarrito');
         div.innerHTML += `
-            <p class="py-3 text-wrap">${producto.nombre}</p>
-            <p class="py-3 text-wrap">Precio: ${producto.precio}</p>
-            <p class="py-3 text-wrap" id=cantidad${producto.id}>Cantidad: ${producto.cantidad}</p>
+            <p class="py-3 col-3">${producto.nombre}</p>
+            <p class="py-3 col-3">Precio: ${producto.precio}</p>
+            <p class="py-3 col-3" id=cantidad${producto.id}>Cantidad: ${producto.cantidad}</p>
             <button id="btn-eliminar" class="pb-4 btn waves-effect waves-ligth boton-eliminar bx bx-x" value="${producto.id}"></button>
         `
         contenedor.appendChild(div);
