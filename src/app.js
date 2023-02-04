@@ -86,11 +86,41 @@ const eliminarProductoCarrito = (productoId) => {
     }
 };
 
+// Vaciar el carrito
+const vaciarCarrito = () => {
+    carrito = [];
+
+    localStorage.removeItem('Carrito', JSON.stringify(carrito))
+    alertaCarritoVacío();
+    actualizarTotalCarrito(carrito);
+    actualizarCarrito();
+}
+
+const carritoVacio = document.getElementById('vaciarCarrito');
+carritoVacio.addEventListener('click', vaciarCarrito)
+
 // Alerta cada vez que elimino un producto
 const alertaProductoEliminado = () => {
     
     Toastify({
         text: "Producto eliminado!",
+        duration: 1500,
+        offset: {
+            x: 20,
+            y: 100 
+        },
+        style: {
+            background: 'rgb(245, 146, 109)',
+            color: 'white',
+        }
+    }).showToast();   
+};
+
+// Alerta cada vez que Vacío el carrito
+const alertaCarritoVacío = () => {
+    
+    Toastify({
+        text: "Carrito vacío!",
         duration: 1500,
         offset: {
             x: 20,
